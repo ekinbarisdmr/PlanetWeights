@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="planetCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="PlanetWeights" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-km-Qow">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="124" id="5et-8A-Rux"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQQ-bH-Hyq">
+                        <rect key="frame" x="36.333333333333329" y="131.66666666666666" width="51.333333333333329" height="21"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IQQ-bH-Hyq" secondAttribute="bottom" constant="7.5" id="3Dr-On-4ep"/>
+                <constraint firstItem="IQQ-bH-Hyq" firstAttribute="top" secondItem="Qy7-km-Qow" secondAttribute="bottom" constant="7.5" id="OsT-E4-szk"/>
+                <constraint firstItem="Qy7-km-Qow" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g2H-Lg-ktb"/>
+                <constraint firstAttribute="trailing" secondItem="Qy7-km-Qow" secondAttribute="trailing" id="j60-Jq-fqb"/>
+                <constraint firstItem="IQQ-bH-Hyq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qRm-vi-UBR"/>
+                <constraint firstItem="Qy7-km-Qow" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yqo-9b-VgE"/>
+            </constraints>
+            <connections>
+                <outlet property="planetImage" destination="Qy7-km-Qow" id="tzv-JS-8CX"/>
+                <outlet property="planetName" destination="IQQ-bH-Hyq" id="i0g-W5-432"/>
+            </connections>
+            <point key="canvasLocation" x="-91.304347826086968" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Earth" width="96" height="96"/>
+    </resources>
+</document>

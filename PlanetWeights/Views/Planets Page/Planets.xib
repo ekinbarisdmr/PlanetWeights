@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Planets" customModule="PlanetWeights" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-uj-r2H">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PYl-gJ-vNG">
+                    <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xcw-z5-sW8">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PYl-gJ-vNG" secondAttribute="bottom" id="1sN-yb-3Dd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5dh-uj-r2H" secondAttribute="bottom" constant="-34" id="8z4-7h-GBf"/>
+                <constraint firstItem="5dh-uj-r2H" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-44" id="M5J-O6-pAY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5dh-uj-r2H" secondAttribute="trailing" id="UXt-Eh-Jhc"/>
+                <constraint firstItem="5dh-uj-r2H" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Z5U-M3-Wzl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PYl-gJ-vNG" secondAttribute="trailing" id="bin-V8-8H1"/>
+                <constraint firstItem="PYl-gJ-vNG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jZU-Jj-HJW"/>
+                <constraint firstItem="PYl-gJ-vNG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kI2-mH-QbE"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="PYl-gJ-vNG" id="Jry-rC-pAM"/>
+                <outlet property="imageView" destination="5dh-uj-r2H" id="Y9Q-0J-bOI"/>
+            </connections>
+            <point key="canvasLocation" x="-318.22429906542055" y="108.85529157667388"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
