@@ -112,7 +112,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, SendValues, SendSe
                 weight = "\(Double(weight)! * 0.904)"
                 age = "\(Double(age)! * 1.622)"
                 
-            default:
+                default:
                 break
         }
         
